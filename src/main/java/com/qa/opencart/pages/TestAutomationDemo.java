@@ -15,6 +15,7 @@ public class TestAutomationDemo {
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("http://google.com");
+		driver.quit();
 
 
 	}
