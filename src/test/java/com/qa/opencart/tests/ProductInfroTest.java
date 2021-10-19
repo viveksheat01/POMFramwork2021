@@ -23,6 +23,8 @@ public class ProductInfroTest extends BaseTest {
 		productInfro = resultpage.selectProduct("MacBook Pro");
 		String actHeader = productInfro.getProductHeaderText();
 
+		System.out.println(actHeader);
+
 		Assert.assertEquals(actHeader, "MacBook Pro");
 	}
 
