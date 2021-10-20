@@ -22,7 +22,6 @@ public class LoginPageTest extends BaseTest {
 	public void loginPageUrlTest() {
 
 		String url = loginpage.getLoginPageUrl();
-		System.out.println("username + passowrd");
 		System.out.println(" actull page titele is " + url);
 		Assert.assertTrue(url.contains(Constants.LOGIN_PAGE_URL_VALUE));
 	}
