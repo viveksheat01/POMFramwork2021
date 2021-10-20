@@ -13,7 +13,6 @@ public class LoginPageTest extends BaseTest {
 	public void loginPageTitleTest() {
 
 		String title = loginpage.getloginPagetitle();
-
 		System.out.println(" actull page titele is " + title);
 		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE);
 	}
@@ -39,6 +38,9 @@ public class LoginPageTest extends BaseTest {
 
 	@Test
 	public void loginTest() {
+
+		System.out.println("username and passowrk should be printed");
+
 		loginpage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 
 	}
